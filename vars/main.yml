@@ -1,0 +1,37 @@
+---
+homebrew_apps:
+  - mas
+  - git
+  - gpg
+  - hub
+  - iperf
+  - mysql
+  - nmap
+  - npm
+  - python
+  - sqlite
+  - wget
+  - openssl
+
+homebrew_tap_repos:
+  - caskroom/cask
+  - homebrew/dupes
+
+homebrew_cask_apps:
+  - appcleaner
+  - docker
+  - fing
+  - firefox
+  - google-chrome
+  - sequel-pro
+  - slack
+  - vagrant
+  - virtualbox
+  - spectacle
+  - flux
+  - google-drive
+  - the-unarchiver
+  - iterm2
+  - atom
+  - veertu-desktop
+  - caffeine

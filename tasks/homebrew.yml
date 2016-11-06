@@ -1,0 +1,28 @@
+---
+- name: Check if Homebrew is installed
+  stat:
+    path: /usr/local/Cellar
+  register: stat_homebrew
+
+- name: Install Homebrew if needed
+  shell: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  when: stat_homebrew.stat.exists == False
+  args:
+    executable: /bin/bash
+
+- name: Tap Homebrew Taps
+  homebrew_tap:
+    tap: "{{ item }}"
+  with_items: "{{ homebrew_tap_repos }}"
+
+- name: Install Homebrew applications
+  homebrew:
+    pkg: "{{ item }}"
+    state: present
+  with_items: "{{ homebrew_apps }}"
+
+- name: Install Homebrew cask applications
+  homebrew_cask:
+    cask: "{{ item }}"
+    state: present
+  with_items: "{{ homebrew_cask_apps }}"
