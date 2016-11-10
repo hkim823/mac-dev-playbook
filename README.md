@@ -21,3 +21,5 @@ Check out [Ansible for DevOps](https://www.ansiblefordevops.com/), which will te
 ## Author
 
 [Jeff Geerling](http://www.jeffgeerling.com/), 2014 (originally inspired by [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks)).
+
+Credit goes to [rtrouton](https://github.com/rtrouton) for his install_xcode_command_line_tools script
