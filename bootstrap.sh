@@ -3,7 +3,7 @@
 #Install Command Line Tools, thanks to https://github.com/rtrouton and https://github.com/Homebrew/install
 
 sudo touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
-sudo softwareupdate -i "`softwareupdate -l | grep -B 1 -E "Command Line (Developer|Tools)" | awk -F"*" '/^ +\\*/ {print $2}' | sed 's/^ *//' | tail -n1`"
+sudo softwareupdate -i -a
 sudo rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
 
 #Install ansible
@@ -13,4 +13,8 @@ sudo pip install ansible
 
 #run playbook
 
-ansible-playbook -vvv main.yml
+ansible-pull -vvv -U https://github.com/hkim823/mac-dev-playbook main.yml
+
+#exit gracefully
+
+exit 0
