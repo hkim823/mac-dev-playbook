@@ -20,7 +20,6 @@ homebrew_tap_repos:
 homebrew_cask_apps:
   - appcleaner
   - docker
-  - fing
   - firefox
   - google-chrome
   - sequel-pro
@@ -33,6 +32,8 @@ homebrew_cask_apps:
   - the-unarchiver
   - iterm2
   - atom
-  - veertu-desktop
+  - visual-studio-code
   - caffeine
   - clipmenu
+  - libreoffice
+  
