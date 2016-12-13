@@ -31,9 +31,7 @@ homebrew_cask_apps:
   - google-drive
   - the-unarchiver
   - iterm2
-  - atom
   - visual-studio-code
   - caffeine
   - clipmenu
   - libreoffice
-  
