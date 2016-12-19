@@ -6,7 +6,6 @@ homebrew_apps:
   - hub
   - iperf
   - mysql
-  - nmap
   - npm
   - python
   - sqlite
@@ -27,7 +26,6 @@ homebrew_cask_apps:
   - vagrant
   - virtualbox
   - spectacle
-  - flux
   - google-drive
   - the-unarchiver
   - iterm2
