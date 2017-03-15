@@ -4,13 +4,11 @@ homebrew_apps:
   - git
   - gpg
   - hub
-  - iperf
   - mysql
   - npm
   - python
   - sqlite
   - wget
-  - openssl
 
 homebrew_tap_repos:
   - caskroom/cask
@@ -21,7 +19,6 @@ homebrew_cask_apps:
   - docker
   - firefox
   - google-chrome
-  - sequel-pro
   - slack
   - vagrant
   - virtualbox
